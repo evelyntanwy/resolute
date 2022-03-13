@@ -1,17 +1,17 @@
-import React from 'react'
+// import React from "react";
 
-import { useAuth0 } from '@auth0/auth0-react'
+// import { useAuth0 } from "@auth0/auth0-react";
 
-const SignIn = () => {
-  const { loginWithRedirect, isAuthenticated } = useAuth0()
+// const SignIn = () => {
+//   const { loginWithRedirect, isAuthenticated } = useAuth0();
 
-  return (
-    !isAuthenticated && (
-      <button className="noauth-button" onClick={() => loginWithRedirect()}>
-        Sign In
-      </button>
-    )
-  )
-}
+//   return (
+//     !isAuthenticated && (
+//       <button className="noauth-button" onClick={() => loginWithRedirect()}>
+//         Sign In
+//       </button>
+//     )
+//   );
+// };
 
-export default SignIn
+// export default SignIn;

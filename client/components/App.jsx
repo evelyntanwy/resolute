@@ -1,34 +1,33 @@
-import React from 'react'
+import React from "react";
 
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 
-import Divider from '@mui/material/Divider'
+import Divider from "@mui/material/Divider";
 
-import NavNoAuth from './NavNoAuth'
-import NavAuth from './NavAuth'
-import HomeAuth from './HomeAuth'
-import HomeNoAuth from './HomeNoAuth'
-import CompletedGoals from './CompletedGoals'
-import MyGoals from './MyGoals'
+// import NavNoAuth from "./NavNoAuth";
+import NavAuth from "./NavAuth";
+import HomeAuth from "./HomeAuth";
+// import HomeNoAuth from "./HomeNoAuth";
+import CompletedGoals from "./CompletedGoals";
+import MyGoals from "./MyGoals";
 
-function App () {
+function App() {
   return (
     <>
       <NavAuth />
-      <NavNoAuth />
+      {/* <NavNoAuth /> */}
 
-      <Divider sx={{ background: '#2C3333', mt: 3.5 }} variant="middle" />
+      <Divider sx={{ background: "#2C3333", mt: 3.5 }} variant="middle" />
 
-      <HomeNoAuth />
+      {/* <HomeNoAuth /> */}
 
       <Routes>
-        <Route path='/' element={<HomeAuth />} />
-        <Route path='/mygoals' element={<MyGoals />} />
-        <Route path='/completed' element={<CompletedGoals />} />
+        <Route path="/" element={<HomeAuth />} />
+        <Route path="/mygoals" element={<MyGoals />} />
+        <Route path="/completed" element={<CompletedGoals />} />
       </Routes>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
