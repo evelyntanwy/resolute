@@ -7,7 +7,7 @@ const reducer = (state = [], action) => {
       return [...state, action.goals];
 
     case "DEL_GOALS":
-      // return state.filter((goals) => goals.id !== action.id)
+      // return state.filter((goals) => goals.id !== action.id);
       return state.filter((goalsObj) => goalsObj.id !== action.id);
 
     case "PATCH_GOALS":
