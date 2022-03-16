@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Confetti from "react-confetti";
 
 import { useDispatch, useSelector } from "react-redux";
 // import { useAuth0 } from '@auth0/auth0-react'
@@ -6,6 +7,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { thunkGetAllGoals } from "../actions/goals";
 
 import Footer from "./Footer";
+
+const canvasStyles = {
+  position: "fixed",
+  pointerEvents: "none",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  left: 0,
+};
 
 const CompletedGoals = () => {
   // const { isAuthenticated } = useAuth0()
@@ -32,6 +42,11 @@ const CompletedGoals = () => {
               }
             })}
           </ul>
+          <div>
+            <button type="submit" className="goals-link">
+              YaY!
+            </button>
+          </div>
         </div>
       </div>
 
